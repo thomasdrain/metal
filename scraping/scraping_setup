@@ -1,0 +1,11 @@
+#### SET UP SCRAPING
+
+pip install virtualenv
+
+# Create a virtual environment
+virtualenv -p python2.7 metal_env
+
+. bin/activate 
+pip install scrapy
+
+scrapy startproject scraping
