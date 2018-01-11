@@ -1,11 +1,17 @@
 #### SET UP SCRAPING
 
-pip install virtualenv
+#pip install virtualenv
 
 # Create a virtual environment
-virtualenv -p python2.7 metal_env
+#virtualenv -p python2.7 metal_env
 
+cd Documents/Personal/metal/scraping/metal/metal_env
+
+# Start virtual environment
 . bin/activate 
-pip install scrapy
+#pip install scrapy
 
-scrapy startproject scraping
+#scrapy startproject scraping
+
+cd metal_scrape
+scrapy genspider example example.com
