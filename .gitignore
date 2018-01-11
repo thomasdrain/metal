@@ -1,7 +1,10 @@
-# Ignore these subdirectories
-scraping/*/*
-!get-pip.py
+## Ignore all subdirectories except our spiders
+/scraping/metal_env/*
+!/scraping/metal_env/metal_scrape/
 
-# Except the spiders subdirectory
-#### This doesn't work.....
-!scraping/metal_env/metal_scrape/metal_scrape/spiders/*
+/scraping/metal_env/metal_scrape/*
+!/scraping/metal_env/metal_scrape/metal_scrape/
+
+/scraping/metal_env/metal_scrape/metal_scrape/*
+!/scraping/metal_env/metal_scrape/metal_scrape/spiders/
+
